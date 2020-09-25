@@ -26,7 +26,7 @@ Description:
 4. Create a file named `chall.json` and copy-paste this inside it:
 ```json
 {
-	"flag1": ""
+	"flag1": "", // write the flag 1
 }
 ```
 
