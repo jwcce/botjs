@@ -12,7 +12,7 @@ Description:
 
 1. Clone the repository by doing in a terminal `git clone https://github.com/jwcce/bot.git`
 2. After cloning, `cd bot` and `npm install`
-3. Create a file named `config.json` and copy-paste this inside it:
+3. Create a file named `config.json`, copy-paste this inside it and write the flag from challenge 1:
 
 ```json
 {
@@ -26,7 +26,7 @@ Description:
 4. Create a file named `chall.json` and copy-paste this inside it:
 ```json
 {
-	"flag1": "", // write the flag 1
+	"flag1": ""
 }
 ```
 
