@@ -11,7 +11,7 @@ Description:
 ***Install & run***
 
 1. Clone the repository by doing in a terminal `git clone https://github.com/jwcce/bot.git`
-2. After cloning, `cd bot` and `npm install`
+2. After cloning, `cd botjs` and `npm install`
 3. Create a file named `config.json`, copy-paste this inside it and write the flag from challenge 1:
 
 ```json
