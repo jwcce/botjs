@@ -1,7 +1,7 @@
-const { prefix } 			= require('../config.json');
-const { MessageAttachment } = require('discord.js');
+const { prefix } 		= require('../storage/config.json');
+const { MessageAttachment } 	= require('discord.js');
 
-module.exports 				= {
+module.exports 			= {
     name: 'file',
     aliases: ["file"],
     description: "Send challenge files",
@@ -10,8 +10,8 @@ module.exports 				= {
     execute(client, message) {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-        const args          = message.content.slice(prefix.length).trim().split(/ +/g);
-        const command       = args.shift().toLowerCase();
+        const args          	= message.content.slice(prefix.length).trim().split(/ +/g);
+        const command       	= args.shift().toLowerCase();
 
 
         if (!args.length) {

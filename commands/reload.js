@@ -1,8 +1,8 @@
 module.exports 				= {
 	name: 'reload',
-    aliases: ["load"],
-    description: "Reload a command.",
-    category: "Config",
+    	aliases: ["load"],
+    	description: "Reload a command.",
+    	category: "Config",
 	execute(client, message, args) {
 		if (!args || args.length < 1) return message.reply('Must specify a command to reload');
 		const commandName 	= args[0];

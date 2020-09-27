@@ -1,5 +1,5 @@
-const { prefix, channel }   = require('../config.json');
-const chall                 = require('../chall.json');
+const { prefix, channel }   = require('../storage/config.json');
+const chall                 = require('../storage/chall.json');
 
 module.exports              = {
     name: 'flag',
