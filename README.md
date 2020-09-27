@@ -38,6 +38,7 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 
 * [x] Command handler optimization.
 * [ ] Flag command optimization.
+* [ ] File command optimization.
 
 ***Commands***
 
