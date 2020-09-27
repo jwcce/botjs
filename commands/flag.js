@@ -1,5 +1,5 @@
-const { prefix, channel }   = require('../storage/config.json');
-const chall                 = require('../storage/chall.json');
+const { prefix, channel }   = require('../storage/config/config.json');
+const chall                 = require('../storage/config/chall.json');
 
 module.exports              = {
     name: 'flag',
@@ -11,8 +11,6 @@ module.exports              = {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
 
         const args          = message.content.slice(prefix.length).trim().split(/ +/g);
-        const command       = args.shift().toLowerCase();
-
 
         if (!args.length) {
             return message.channel.send(`You didn't write a flag ${message.author}!`);

@@ -1,4 +1,4 @@
-const { prefix } 	    = require('../storage/config.json');
+const { prefix } 	    = require('../storage/config/config.json');
 
 module.exports              = {
     // CMD INFORMATION
@@ -11,8 +11,6 @@ module.exports              = {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
 
         const args          = message.content.slice(prefix.length).trim().split(/ +/g);
-        const command       = args.shift().toLowerCase();
-
 
         if (!args.length) {
             return message.channel.send(`You didn't choose a challenge ${message.author}!`);

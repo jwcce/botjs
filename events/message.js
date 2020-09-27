@@ -1,5 +1,4 @@
-const Discord           = require("discord.js");
-const { prefix } 	= require('../storage/config.json');
+const { prefix } 	= require('../storage/config/config.json');
 
 module.exports          = (client, message) => {
     if (message.author.bot) return;
