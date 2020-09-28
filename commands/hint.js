@@ -10,8 +10,6 @@ module.exports              = {
     execute(client, message, args) {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-        // const args          = message.content.slice(prefix.length).trim().split(/ +/);
-
         if (!args.length) {
             return message.channel.send(`You didn't choose a challenge ${message.author}!`);
         } 
