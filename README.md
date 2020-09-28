@@ -50,13 +50,16 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 
 > Files, (to receive the challenge files),
 !files {Challenge_Number}
-
+>
 > Hint, (to receive just a hint),
 !hint {Challenge_Number}
-
+>
 > Flag, (verify, send the flag),
 !flag {Flag}
-
+>
+> Source, (show the github repository),
+!source
+>
 > Help, (show commands above),
 !help
 
