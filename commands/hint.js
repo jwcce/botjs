@@ -7,10 +7,10 @@ module.exports              = {
     description: "Command to get a hint",
     category: "CTF",
     
-    execute(client, message) {
+    execute(client, message, args) {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-        const args          = message.content.slice(prefix.length).trim().split(/ +/g);
+        // const args          = message.content.slice(prefix.length).trim().split(/ +/);
 
         if (!args.length) {
             return message.channel.send(`You didn't choose a challenge ${message.author}!`);
