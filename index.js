@@ -1,7 +1,8 @@
 // importing
-const config  			= require('./storage/config.json');
+const config  			= require('./storage/config/config.json');
 const Discord 			= require('discord.js'); 
 const fs			= require('fs');
+const http			= require('http');
 
 const client  			= new Discord.Client();
 client.commands 		= new Discord.Collection();
