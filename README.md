@@ -62,4 +62,8 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 >
 > Help, (show commands above),
 !help
+> Reload, (reload a command),
+!reload {command}
 
+> 0raid, (antiraid command),
+!0raid on/off
