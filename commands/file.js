@@ -16,7 +16,7 @@ module.exports 			= {
 
         else if (args[0] === '1') {
         	const attach    = new MessageAttachment(`./storage/file/1.zip`);
-        	message.channel.send(attach)
+        	message.channel.send(`these images seem too heavy...`, attach)
         } 
 
         else {
