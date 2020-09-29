@@ -1,3 +1,5 @@
+const Discord                           = require('discord.js');
+
 module.exports 				= {
 	name: 'reload',
     	aliases: ["load"],
@@ -16,6 +18,11 @@ module.exports 				= {
 		client.commands.delete(commandName);
 		const props 		= require(`./${commandName}.js`);
 		client.commands.set(commandName, props);
-		message.author.send(`Command ${commandName} reloaded`);
+
+		const embed = new Discord.MessageEmbed()
+		    .setTitle('Reload')
+		    .setColor('#a632a8')
+		    .setDescription(`Command ${commandName} reloaded`)
+		message.author.send(embed);
 	},
 };

@@ -1,4 +1,5 @@
 const { prefix } 	    = require('../storage/config/config.json');
+const Discord               = require('discord.js');
 
 module.exports              = {
     // CMD INFORMATION
@@ -15,7 +16,12 @@ module.exports              = {
         } 
 
         else if (args[0] === '1') {
-            message.channel.send('> Hint: || **STEGHIDE** ||');
+	    const embed = new Discord.MessageEmbed()
+		.setTitle('Hint')
+		.setColor('#a632a8')
+		.setDescription('|| **steganography** ||')
+		.setTimestamp()
+            message.channel.send(embed);
         }
 
         else {

@@ -1,5 +1,6 @@
 const { prefix, channel }   = require('../storage/config/config.json');
 const chall                 = require('../storage/config/chall.json');
+const Discord		    = require('discord.js');
 
 module.exports              = {
     name: 'flag',
@@ -17,8 +18,19 @@ module.exports              = {
         // setting flag 1
         else if (args[0] === chall.flag1) {
             message.delete();
-            message.author.send('Congrats, you found the flag!');
-            client.channels.cache.get(channel).send(`<@` + message.author.id + `>` + ` ` + `found the flag from challenge 1!`);
+	    const privateEmbed = new Discord.MessageEmbed()
+	        .setTitle('First Challenge')
+		.setColor('#a632a8')
+		.setDescription('You found the first flag!')
+		.setTimestamp()
+            message.author.send(privateEmbed);
+
+	    const publicEmbed = new Discord.MessageEmbed()
+		.setTitle('First Challenge')
+		.setColor('#a632a8')
+		.setDescription(`<@` + message.author.id + `>` + ` ` + `found the first flag!`)
+            client.channels.cache.get(channel).send(publicEmbed);
+
             setTimeout(() => { console.log(`[+] ${message.author.tag} found the flag from challenge 1!`); }, 2000);
         } else {
             message.author.send('Wrong answer!');
