@@ -21,7 +21,6 @@ module.exports = {
 				.setTitle('0raid')
 				.setColor('#a632a8')
 				.setDescription('command enabled')
-				.setTimestamp()
 			message.channel.send(embed);
 		} else if (args[0] === 'off') {
 			role.setPermissions(67111937);
@@ -29,7 +28,6 @@ module.exports = {
 				.setTitle('0raid')
 				.setColor('#a632a8')
 				.setDescription('command disabled')
-				.setTimestamp()
 			message.channel.send(embed);
 		} else {
 			message.channel.send('no');

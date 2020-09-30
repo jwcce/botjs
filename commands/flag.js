@@ -22,7 +22,6 @@ module.exports              = {
 	        .setTitle('First Challenge')
 		.setColor('#a632a8')
 		.setDescription('You found the first flag!')
-		.setTimestamp()
             message.author.send(privateEmbed);
 
 	    const publicEmbed = new Discord.MessageEmbed()

@@ -20,7 +20,6 @@ module.exports              = {
 		.setTitle('Hint')
 		.setColor('#a632a8')
 		.setDescription('|| **steganography** ||')
-		.setTimestamp()
             message.channel.send(embed);
         }
 
