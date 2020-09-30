@@ -48,8 +48,8 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 
 {required args}
 
-> Files, (to receive the challenge files),
-!files {Challenge_Number}
+> Chall, (to receive the challenge infos),
+!chall {Challenge_Number}
 >
 > Hint, (to receive just a hint),
 !hint {Challenge_Number}
@@ -68,3 +68,5 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 >
 > 0raid, (antiraid command),
 !0raid on/off
+> Clear, (delete messages, min:2/max:100),
+!clear 2-100
