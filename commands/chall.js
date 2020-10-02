@@ -11,8 +11,6 @@ module.exports 			= {
         if (!message.content.startsWith(prefix) || message.author.bot) return;
 
         if (!args.length) {
-        	return message.channel.send(`You didn't choose a challenge ${message.author}!`);
-        } else if (args[0] === 'help') {
 		const embed 	= new Discord.MessageEmbed()
 			.setTitle('Challenges')
 			.setColor('#a632a8')
