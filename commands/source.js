@@ -1,6 +1,4 @@
-const { prefix }            = require('../storage/config/config.json'); 
-
-module.exports              = {
+module.exports = {
     name: 'source',
     aliases: ['codigo'],
     description: "Command to get the bot source link",
