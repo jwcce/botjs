@@ -1,4 +1,4 @@
-const { prefix } 	    = require('../storage/config/config.json');
+const { prefix } 	        = require('../storage/config/config.json');
 const Discord               = require('discord.js');
 
 module.exports              = {

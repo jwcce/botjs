@@ -12,7 +12,7 @@ client.events 			= new Discord.Collection();
 const eventFiles 		= fs.readdirSync('./events/').filter(file => file.endsWith('.js'));
 for (const file of eventFiles) {
     const event 		= require(`./events/${file}`);
-    const eventName 		= file.split(".")[0];
+    const eventName 	= file.split(".")[0];
     console.log(`[+] Loading Event - ${eventName}`);
     client.on(eventName, event.bind(null, client));
 }
