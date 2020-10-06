@@ -1,5 +1,5 @@
 // importing
-const config  			= require('./storage/config/config.json');
+const config  			= require('./src/storage/config/config.json');
 const Discord 			= require('discord.js'); 
 const fs			= require('fs');
 
@@ -9,9 +9,9 @@ client.events 			= new Discord.Collection();
 
 
 // event handler
-const eventFiles 		= fs.readdirSync('./events/').filter(file => file.endsWith('.js'));
+const eventFiles 		= fs.readdirSync('./src/events/').filter(file => file.endsWith('.js'));
 for (const file of eventFiles) {
-    const event 		= require(`./events/${file}`);
+    const event 		= require(`./src/events/${file}`);
     const eventName 	= file.split(".")[0];
     console.log(`[+] Loading Event - ${eventName}`);
     client.on(eventName, event.bind(null, client));
@@ -19,9 +19,9 @@ for (const file of eventFiles) {
 
 
 // command handler
-const commandFiles 		= fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+const commandFiles 		= fs.readdirSync('./src/commands/').filter(file => file.endsWith('.js'));
 for (const file of commandFiles) {
-    const command 		= require(`./commands/${file}`);
+    const command 		= require(`./src/commands/${file}`);
     client.commands.set(command.name, command);
     console.log(`[+] Loading Command - ${command.name}`);
 }
