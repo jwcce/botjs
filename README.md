@@ -15,7 +15,7 @@ Description:
 
 1. Clone the repository by doing in a terminal `git clone https://github.com/jwcce/bot.git`
 2. After cloning, `cd botjs` and `npm install`
-3. Create a file named `storage/config/config.json`, copy-paste this inside it:
+3. Create a file `src/storage/config/config.json`, copy-paste this inside it:
 
 ```json
 {
@@ -26,7 +26,7 @@ Description:
 }
 ```
 
-4. Create a file named `storage/config/chall.json` and copy-paste this inside it and write the flag from challenge 1:
+4. Create a file `src/storage/config/chall.json` and copy-paste this inside it and write the flag from challenge 1:
 ```json
 {
 	"flag1": ""
