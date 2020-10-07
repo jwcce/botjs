@@ -8,6 +8,16 @@ client.commands 		= new Discord.Collection();
 client.events 			= new Discord.Collection();
 
 
+// banner
+console.log(`
+ ▄▄·  ▄ .▄ ▄▄▄· ▄▄▌  ▄▄▌        ▄▄▄▄▄
+▐█ ▌▪██▪▐█▐█ ▀█ ██•  ██•   ▄█▀▄ •██  
+██ ▄▄██▀▀█▄█▀▀█ ██ ▪ ██ ▪ ▐█▌.▐▌ ▐█.▪
+▐███▌██▌▐▀▐█▪ ▐▌▐█▌ ▄▐█▌ ▄▐█▌.▐▌ ▐█▌·
+·▀▀▀ ▀▀▀ · ▀  ▀ .▀▀▀ .▀▀▀  ▀█▄▀▪ ▀▀▀ 
+`);
+
+
 // event handler
 const eventFiles 		= fs.readdirSync('./src/events/').filter(file => file.endsWith('.js'));
 for (const file of eventFiles) {

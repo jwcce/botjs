@@ -18,8 +18,8 @@ module.exports 			= {
 	
 		message.channel.send(embed);
 	} else if (args[0] === '1') {
-        	const attach    = new Discord.MessageAttachment(`./storage/file/1.zip`);
-        	message.channel.send(`these images seem too heavy...`, attach)
+        	const attach    = new Discord.MessageAttachment(`./src/storage/file/1.zip`);
+        	message.channel.send(`These images seem too heavy...`, attach)
         } else {
         	message.channel.send('File not found.')
         }
