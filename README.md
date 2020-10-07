@@ -7,9 +7,11 @@
 
 Description:
 
-​A bot created for usage on the Chimmy Changas discord server developed with [discord.js](https://discord.js.org).
+​A bot created for training CTF skills developed with [discord.js](https://discord.js.org).
 
-​Server invite: [invite](https://discord.gg/VAvPvhE)
+​Our server: [server invite](https://discord.gg/VAvPvhE)
+
+ Invite the bot to your server: [invite the bot](https://discord.com/api/oauth2/authorize?client_id=757934498997600338&permissions=0&scope=bot)
 
 ***Install & run***
 
