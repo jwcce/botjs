@@ -14,19 +14,8 @@ Description:
 ***Install & run***
 
 1. Clone the repository by doing in a terminal `git clone https://github.com/jwcce/bot.git`
-2. After cloning, `cd botjs` and `npm install`
-3. Create a file `src/storage/config/config.json`, copy-paste this inside it:
-
-```json
-{
-    "owner_ID": "",
-    "prefix": "",
-    "token": "",
-    "version": ""
-}
-```
-
-4. Create a file `src/storage/config/chall.json` and copy-paste this inside it and write the flag from challenge 1:
+2. After cloning, `cd botjs/setup/`, `chmod +x setup.sh` and after `./setup.sh` and follow the instructions.
+3. Create a file `src/storage/config/chall.json` and write the flags from all challenges like this:
 ```json
 {
 	"flag1": ""
@@ -48,24 +37,25 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 {required args}
 
 > Chall, (to receive the challenge infos),
-!chall {Challenge_Number}
+~chall {Challenge_Number}
 >
 > Hint, (to receive just a hint),
-!hint {Challenge_Number}
+~hint {Challenge_Number}
 >
 > Flag, (verify, send the flag),
-!flag {Flag}
+~flag {Flag}
 >
 > Source, (show the github repository),
-!source
+~source
 >
 > Help, (show commands above),
-!help
+~help
 >
 > Reload, (reload a command),
-!reload {command}
+~reload {command}
 >
 > 0raid, (antiraid command),
-!0raid on/off
+~0raid on/off
+>
 > Clear, (delete messages, min:2/max:100),
-!clear 2-100
+~clear 2-100
