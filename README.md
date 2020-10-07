@@ -1,6 +1,6 @@
 # A Node.js based Discord BOT with CTF features.
 
-[![CodeFactor](https://www.codefactor.io/repository/github/jwcce/botjs/badge)](https://www.codefactor.io/repository/github/jwcce/botjs)
+[![CodeFactor](https://www.codefactor.io/repository/github/jwcce/challot/badge)](https://www.codefactor.io/repository/github/jwcce/challot)
 ![NPM](https://img.shields.io/badge/npm-6.14.8-sucess)
 
 **Source:** Created by jwcce
