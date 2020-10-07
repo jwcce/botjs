@@ -14,7 +14,7 @@ module.exports 			= {
 		const embed 	= new Discord.MessageEmbed()
 			.setTitle('Challenges')
 			.setColor('#a632a8')
-			.setDescription('**2**')
+			.setDescription('**3**')
 	
 		message.channel.send(embed);
 	} else if (args[0] >= 1) {
@@ -26,6 +26,10 @@ module.exports 			= {
 				break;
 			case '2':
 				message.channel.send('Open your eyes!', attach);
+				break;
+			case '3':
+				message.channel.send('OHHH, im blind!', attach);
+				break;
 		}
         } else {
         	message.channel.send('File not found.')

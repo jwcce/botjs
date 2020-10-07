@@ -15,12 +15,27 @@ module.exports              = {
             return message.channel.send(`You didn't choose a challenge ${message.author}!`);
         } 
 
-        else if (args[0] === '1') {
-	    const embed = new Discord.MessageEmbed()
-		.setTitle('Hint')
-		.setColor('#a632a8')
-		.setDescription('|| **steganography** ||')
-            message.channel.send(embed);
+        else if (args[0] >= 1) {
+		switch (args[0]) {
+			case '1':
+				var embed = new Discord.MessageEmbed()
+					.setTitle('Hint')
+					.setColor('#a632a8')
+					.setDescription('|| **steganography** ||')
+            			break;
+			case '2':
+				var embed = new Discord.MessageEmbed()
+					.setTitle('Hint')
+					.setColor('#a632a8')
+					.setDescription('|| **nothing here, just find the flag** ||')
+				break;
+			case '3':
+				var embed = new Discord.MessageEmbed()
+					.setTitle('Hint')
+					.setColor('#a632a8')
+					.setDescription('|| **you looked inside?** ||')
+		}
+		message.channel.send(embed);
         }
 
         else {
