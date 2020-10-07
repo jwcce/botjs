@@ -5,6 +5,6 @@ module.exports = {
     category: "Info",
     
     execute(client, message) {
-        message.channel.send('https://github.com/jwcce/botjs');
+        message.channel.send('https://github.com/jwcce/challot');
     },
 };
