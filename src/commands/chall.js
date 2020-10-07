@@ -14,12 +14,19 @@ module.exports 			= {
 		const embed 	= new Discord.MessageEmbed()
 			.setTitle('Challenges')
 			.setColor('#a632a8')
-			.setDescription('**1**')
+			.setDescription('**2**')
 	
 		message.channel.send(embed);
-	} else if (args[0] === '1') {
-        	const attach    = new Discord.MessageAttachment(`./src/storage/file/1.zip`);
-        	message.channel.send(`These images seem too heavy...`, attach)
+	} else if (args[0] >= 1) {
+		const file = args[0];
+        	const attach = new Discord.MessageAttachment(`./src/storage/file/${file}.zip`);
+		switch (args[0]) {
+			case '1':
+				message.channel.send('These images seem too heavy...', attach);
+				break;
+			case '2':
+				message.channel.send('Open your eyes!', attach);
+		}
         } else {
         	message.channel.send('File not found.')
         }
