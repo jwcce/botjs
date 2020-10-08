@@ -12,6 +12,13 @@ Description:
 ​Our server: [server invite](https://discord.gg/VAvPvhE)
 
  Invite the bot to your server: [invite the bot](https://discord.com/api/oauth2/authorize?client_id=757934498997600338&permissions=0&scope=bot)
+ 
+***Contributors***
+
+- jwcce
+  - Initial commit and creation, initial challenges and base features
+- lost
+  - Challenge creator
 
 ***Install & run***
 
