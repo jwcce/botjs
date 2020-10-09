@@ -16,21 +16,21 @@ module.exports              = {
         } 
 
         // setting flag 1
-	if (Object.getOwnPropertyNames(chall).includes(args[0])) {
+        if (Object.getOwnPropertyNames(chall).includes(args[0])) {
             message.delete();
-	    const privateEmbed = new Discord.MessageEmbed()
-	        .setTitle('Challenge')
-		.setColor('#a632a8')
-		.setDescription('You found the flag! Now, go to the next!')
+            const privateEmbed = new Discord.MessageEmbed()
+                .setTitle('Challenge')
+                .setColor('#a632a8')
+                .setDescription(`You found the flag on challenge ${chall[args[0]]}!`)
             message.author.send(privateEmbed);
 
-	    const publicEmbed = new Discord.MessageEmbed()
-		.setTitle('Challenge')
-		.setColor('#a632a8')
-		.setDescription(`<@` + message.author.id + `>` + ` ` + `found a flag!`)
+            const publicEmbed = new Discord.MessageEmbed()
+                .setTitle('Challenge')
+                .setColor('#a632a8')
+                .setDescription(`<@` + message.author.id + `>` + ` ` + `found the flag on challenge ${chall[args[0]]}!`)
             client.channels.cache.get(channelid).send(publicEmbed);
 
-            setTimeout(() => { console.log(`[+] ${message.author.tag} found a flag!`); }, 2000);
+            setTimeout(() => { console.log(`[+] ${message.author.tag} found the flag on challenge ${chall[args[0]]}!`); }, 2000);
         } else {
             message.author.send('Wrong answer!');
         }

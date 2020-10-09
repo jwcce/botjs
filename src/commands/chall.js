@@ -11,27 +11,27 @@ module.exports = {
 
     execute(client, message, args) {
         fs.readdir('./src/storage/file', (err, files) => {
-                const max = files.length;
+			const max = files.length;
 
-	        if (!message.content.startsWith(prefix) || message.author.bot) return;
+			if (!message.content.startsWith(prefix) || message.author.bot) return;
 
-		if (!args.length) {
-			const embed = new Discord.MessageEmbed()
-				.setTitle('Challenges')
-				.setColor('#a632a8')
-				.setDescription(`**${max}**`)
+			if (!args.length) {
+				const embed = new Discord.MessageEmbed()
+					.setTitle('Challenges')
+					.setColor('#a632a8')
+					.setDescription(`**${max}**`)
+
+				message.channel.send(embed);
+			} else if (max >= args[0] >= 1) {
 	
-			console.log(max);
-			message.channel.send(embed);
-
-		} else if (max >= args[0] >= 1) {
-			const file = args[0];
+				const file = args[0];
         		const attach = new Discord.MessageAttachment(`./src/storage/file/${file}.zip`);
 	
-			message.channel.send(text[file], attach);
-		} else {
+				message.channel.send(text[file], attach);
+			} else {
+
         		message.channel.send('Challenge not found.');
        		}
-	});
+		});
     },
 };

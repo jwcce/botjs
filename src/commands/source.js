@@ -5,6 +5,6 @@ module.exports = {
     category: "Info",
     
     execute(client, message) {
-        message.channel.send('https://github.com/jwcce/challot');
+        message.channel.send('Ey, if you like the project, leave a :star:!  \nhttps://github.com/jwcce/challot');
     },
 };
