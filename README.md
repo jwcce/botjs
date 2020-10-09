@@ -1,8 +1,9 @@
 # A Node.js based Discord BOT with CTF challenges.
 
 [![CodeFactor](https://www.codefactor.io/repository/github/jwcce/challot/badge)](https://www.codefactor.io/repository/github/jwcce/challot)
+![License](https://img.shields.io/github/license/jwcce/challot)
 ![Node](https://img.shields.io/badge/node-12.19.0-sucess)
-![NPM](https://img.shields.io/badge/npm-6.14.8-sucess)
+![Issues](https://img.shields.io/github/issues/jwcce/challot)
 
 **Source:** Created by jwcce
 
