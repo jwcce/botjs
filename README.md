@@ -1,6 +1,7 @@
 # A Node.js based Discord BOT with CTF challenges.
 
 [![CodeFactor](https://www.codefactor.io/repository/github/jwcce/challot/badge)](https://www.codefactor.io/repository/github/jwcce/challot)
+![Node](https://img.shields.io/badge/node-12.19.0-sucess)
 ![NPM](https://img.shields.io/badge/npm-6.14.8-sucess)
 
 **Source:** Created by jwcce
@@ -37,9 +38,10 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 
 ***To-Do***
 
-* [x] Command handler optimization.
+* [x] Command handler optimization
 * [x] Chall command optimization
-* [ ] Flag command optimization.
+* [ ] Flag command optimization
+* [ ] Leaderboard
 
 ***Commands***
 
