@@ -11,7 +11,7 @@ Description:
 
 ​Our server: [server invite](https://discord.gg/VAvPvhE)
 
- Invite the bot to your server: [invite the bot](https://discord.com/api/oauth2/authorize?client_id=757934498997600338&permissions=0&scope=bot)
+ Invite the bot to your server: [invite the bot](https://discord.com/api/oauth2/authorize?client_id=757934498997600338&permissions=261120&scope=bot)
  
 ***Contributors***
 
