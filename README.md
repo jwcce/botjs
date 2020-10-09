@@ -16,7 +16,7 @@ Description:
 ***Contributors***
 
 - jwcce
-  - Initial commit and creation, initial challenges and base features
+  - Lead dev and challenge creator
 - lost
   - Challenge creator
 
