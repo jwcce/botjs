@@ -71,3 +71,6 @@ If you're going to publish your work on Github or somewhere else, please, **NEVE
 >
 > Clear, (delete messages, min:2/max:100),
 ~clear 2-100
+>
+> Tunnel, (show the current ngrok tunnel)
+~tunnel
