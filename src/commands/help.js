@@ -11,7 +11,7 @@ module.exports = {
 		.setColor('#a632a8')
 	  	.setTitle('General')
     		.addFields(
-			{ name: 'Chall', value: '~chall {Challenge Number}' },
+			{ name: 'Challenge', value: '~chall {Challenge Number}' },
 			{ name: 'Hint', value: '~hint {Challenge Number}' },
 			{ name: 'Flag', value: '~flag {Flag}' },
 			{ name: 'Source', value: '~source' },

@@ -21,13 +21,13 @@ module.exports              = {
             const privateEmbed = new Discord.MessageEmbed()
                 .setTitle('Challenge')
                 .setColor('#a632a8')
-                .setDescription(`You found the flag on challenge ${chall[args[0]]}!`)
+                .setDescription(`:white_check_mark: ***You found the flag on challenge ${chall[args[0]]}!***`)
             message.author.send(privateEmbed);
 
             const publicEmbed = new Discord.MessageEmbed()
                 .setTitle('Challenge')
                 .setColor('#a632a8')
-                .setDescription(`<@` + message.author.id + `>` + ` ` + `found the flag on challenge ${chall[args[0]]}!`)
+                .setDescription(`:white_check_mark: <@` + message.author.id + `>` + ` ` + `***found the flag on challenge ${chall[args[0]]}!***`)
             client.channels.cache.get(channelid).send(publicEmbed);
 
             setTimeout(() => { console.log(`[+] ${message.author.tag} found the flag on challenge ${chall[args[0]]}!`); }, 2000);

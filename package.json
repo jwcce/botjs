@@ -1,5 +1,5 @@
 {
-  "name": "bot",
+  "name": "Challot",
   "version": "1.2.0",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.3.1",
+    "express": "^4.17.1",
     "fs": "0.0.1-security",
     "jsonfile": "^6.0.1",
+    "ngrok": "^3.3.0",
     "readline": "^1.3.0"
   }
 }

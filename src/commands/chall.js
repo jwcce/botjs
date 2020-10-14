@@ -1,5 +1,6 @@
 const { prefix } 	= require('../storage/config/config.json');
-const text		= require('../storage/config/text.json');	
+const text		= require('../storage/config/text.json');
+const { link }		= require('../storage/config/tunnel.json')	
 const Discord		= require('discord.js');
 const fs 		= require('fs');
 
@@ -24,14 +25,13 @@ module.exports = {
 				message.channel.send(embed);
 			} else if (max >= args[0] >= 1) {
 	
-				const file = args[0];
-        		const attach = new Discord.MessageAttachment(`./src/storage/file/${file}.zip`);
+        			const attach = new Discord.MessageAttachment(`./src/storage/file/${args[0]}.zip`);
 	
-				message.channel.send(text[file], attach);
+				message.channel.send(text[args[0]], attach);
 			} else {
 
-        		message.channel.send('Challenge not found.');
-       		}
+				message.channel.send('Challenge not found.');       			
+			}
 		});
     },
 };

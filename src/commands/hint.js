@@ -2,7 +2,6 @@ const { prefix } 	        = require('../storage/config/config.json');
 const Discord               = require('discord.js');
 
 module.exports              = {
-    // CMD INFORMATION
     name: 'hint',
     aliases: ['dica'],
     description: "Command to get a hint",
@@ -36,9 +35,7 @@ module.exports              = {
 					.setDescription('|| **you looked inside?** ||')
 		}
 		message.channel.send(embed);
-        }
-
-        else {
+        } else {
             message.channel.send('Challenge not found.')
         }
     },
