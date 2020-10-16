@@ -12,7 +12,7 @@ cd setup
 
 node config.js
 
-echo 'main file: (index.js)' 
+echo 'main file: (app.js)' 
 read -p '-> ' mainfile
 
 cd ..
